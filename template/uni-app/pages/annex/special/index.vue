@@ -34,10 +34,10 @@
 					<!-- 商品列表 -->
 					<goodList ref="goodLists" v-if="item.name == 'goodList'" :dataConfig="item"></goodList>
 					<guide v-if="item.name == 'guide'" :dataConfig="item"></guide>
-					<!-- 直播模块 -->
-					<!-- #ifdef  MP-WEIXIN -->
-					<liveBroadcast v-if="item.name == 'liveBroadcast'" :dataConfig="item"></liveBroadcast>
-					<!-- #endif -->
+					<!-- 直播已移除 -->
+				<!-- #ifdef MP-WEIXIN -->
+				<!-- <liveBroadcast v-if="item.name == 'liveBroadcast'" :dataConfig="item"></liveBroadcast> -->
+				<!-- #endif -->
 					<menus v-if="item.name == 'menus'" :dataConfig="item"></menus>
 					<!-- 实时消息 -->
 					<news v-if="item.name == 'news'" :dataConfig="item"></news>
@@ -118,8 +118,8 @@
 	import customerService from '@/pages/index/components/customerService';
 	import goodList from '@/pages/index/components/goodList';
 	import guide from '@/pages/index/components/guide';
-	import liveBroadcast from '@/pages/index/components/liveBroadcast';
-	import menus from '@/pages/index/components/menus';
+// import liveBroadcast from '@/pages/index/components/liveBroadcast';
+import menus from '@/pages/index/components/menus';
 	import news from '@/pages/index/components/news';
 	import pictureCube from '@/pages/index/components/pictureCube';
 	import promotionList from '@/pages/index/components/promotionList';
@@ -206,7 +206,7 @@
 			customerService,
 			goodList,
 			guide,
-			liveBroadcast,
+			// liveBroadcast,
 			menus,
 			pictureCube,
 			news,

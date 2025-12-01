@@ -2,9 +2,8 @@
 	<!-- #ifdef MP -->
 	<view v-if="liveList.length > 0">
 		<view class="live-wrapper-b">
-			<navigator class="live-item-b" v-for="(item,index) in liveList" :key="index"
-				:url="'plugin-private://wx2b03c6e691cd7370/pages/live-player-plugin?room_id=' + item.room_id+'&custom_params='+custom_params"
-				hover-class="none" :style="[{'background':bg},{'box-shadow':`0px 1px 20px ${boxShadow}`}]">
+			<view class="live-item-b" v-for="(item,index) in liveList" :key="index"
+				:style="[{'background':bg},{'box-shadow':`0px 1px 20px ${boxShadow}`}]">
 				<view class="img-box">
 					<view class="label bgblue" v-if="item.live_status == 102">
 						<view class="txt">{{$t(`预告`)}}</view>
@@ -27,7 +26,7 @@
 							<text>{{item.anchor_name}}</text>
 					</view>
 				</view>
-			</navigator>
+			</view>
 		</view>
 	</view>
 	<!-- #endif -->

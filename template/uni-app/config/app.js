@@ -2,7 +2,8 @@ module.exports = {
 	// 小程序 / APP请求配置
 	// #ifdef MP || APP-PLUS
 	// 请求域名 格式： https://您的域名
-	HTTP_REQUEST_URL: `https://demo.crmeb.com`,
+	// 开发环境使用本地地址，生产环境请替换为合法域名
+	HTTP_REQUEST_URL: process.env.NODE_ENV === 'development' ? `http://192.168.1.7:8011` : `http://192.168.1.7:8011`,
 	// #endif
 
 	// H5请求配置

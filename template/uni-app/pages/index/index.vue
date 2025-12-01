@@ -32,9 +32,9 @@
 					<!-- 商品列表 -->
 					<goodList ref="goodLists" v-if="item.name == 'goodList'" :dataConfig="item"></goodList>
 					<guide v-if="item.name == 'guide'" :dataConfig="item"></guide>
-					<!-- 直播模块 -->
+					<!-- 直播模块已移除 -->
 					<!-- #ifdef  MP-WEIXIN -->
-					<liveBroadcast v-if="item.name == 'liveBroadcast'" :dataConfig="item"></liveBroadcast>
+					<!-- <liveBroadcast v-if="item.name == 'liveBroadcast'" :dataConfig="item"></liveBroadcast> -->
 					<!-- #endif -->
 					<menus v-if="item.name == 'menus'" :dataConfig="item"></menus>
 					<!-- 实时消息 -->
@@ -148,7 +148,7 @@ import combination from './components/combination';
 import customerService from './components/customerService';
 import goodList from './components/goodList';
 import guide from './components/guide';
-import liveBroadcast from './components/liveBroadcast';
+// import liveBroadcast from './components/liveBroadcast';
 import menus from './components/menus';
 import news from './components/news';
 import pictureCube from './components/pictureCube';
@@ -228,7 +228,7 @@ export default {
 		customerService,
 		goodList,
 		guide,
-		liveBroadcast,
+		// liveBroadcast,
 		menus,
 		pictureCube,
 		news,

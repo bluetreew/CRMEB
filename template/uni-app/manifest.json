@@ -1,7 +1,7 @@
 {
-    "name" : "CRMEB标准版",
-    "appid" : "__UNI__A3F1ED4",
-    "description" : "CRMEB标准版",
+    "name" : "CRMEB-shop",
+    "appid" : "__UNI__70B5055",
+    "description" : "CRMEB-shop",
     "versionName" : "5.6.2",
     "versionCode" : 562,
     "transformPx" : false,
@@ -99,13 +99,13 @@
                     },
                     "weixin" : {
                         "__platform__" : [ "ios", "android" ],
-                        "appid" : "wx277a269f3d736d67",
+                        "appid" : "wx7c7f38a7c5fc88cc",
                         "UniversalLinks" : "https://bzapp.crmeb.net/uni-universallinks/__UNI__A3F1ED4/"
                     }
                 },
                 "share" : {
                     "weixin" : {
-                        "appid" : "wx277a269f3d736d67",
+                        "appid" : "wx7c7f38a7c5fc88cc",
                         "UniversalLinks" : "https://bzapp.crmeb.net/uni-universallinks/__UNI__A3F1ED4/"
                     }
                 },
@@ -119,7 +119,7 @@
                 "oauth" : {
                     "apple" : {},
                     "weixin" : {
-                        "appid" : "wx277a269f3d736d67",
+                        "appid" : "wx7c7f38a7c5fc88cc",
                         "appsecret" : "bd08741a055c2ecac5826ff1c048464b",
                         "UniversalLinks" : "https://bzapp.crmeb.net/uni-universallinks/__UNI__A3F1ED4/"
                     }
@@ -182,9 +182,9 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wx3b82801238ca1b57",
+        "appid" : "wx7c7f38a7c5fc88cc",
         "setting" : {
-            "urlCheck" : false,
+            "urlCheck" : true,
             "minified" : true,
             "postcss" : true,
             "es6" : true
@@ -250,5 +250,3 @@
     "_spaceID" : "679f0930-8f60-425c-9033-8c135f397ea5",
     "lazyCodeLoading" : "requiredComponents"
 }
-/* ios打包配置 */
-
